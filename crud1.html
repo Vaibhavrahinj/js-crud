@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD 
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="crud-js1.js"></script>
+</head>
+
+<body>
+
+	<h1>JavaScript CRUD Opearation</h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Emp Name*</label><label class="validation-error hide" id="fullNameValidationError">This Name field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Emp Email</label><label class="validation-error hide" id="email-val">This email field is required.</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Contact</label><label class="validation-error hide" id="contact-val">This contact field is required.</label>
+                        <input type="number" name="contact" id="contact">
+                    </div>
+                    <div>
+                        <label>City</label><label class="validation-error hide" id="city-val">This city field is required.</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit" onclick="val();">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email Id</th>
+                            <th>Contact</th>
+                            <th>City</th>
+                            <th>Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
